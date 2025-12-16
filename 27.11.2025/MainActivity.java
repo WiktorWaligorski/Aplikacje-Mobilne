@@ -1,10 +1,9 @@
-package com.example.a27112025;
+package com.example.zadanie;
 
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -26,26 +25,23 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        Button button = findViewById(R.id.button3);
+        button.setOnClickListener(new Button.OnClickListener() {
+            public void onClick(View v) {
+                EditText txtname = findViewById(R.id.editTextText2);
+                String name =  txtname.getText().toString();
 
-        Button button = (Button)findViewById(R.id.button2);
-        button.setOnClickListener(press);
+                Toast.makeText(getApplicationContext(), name, Toast.LENGTH_LONG).show();
+            }
+        });
     }
 
-    public void displayText(View view){
+    public void funkcja1(View view) {
+        EditText txtname = findViewById(R.id.editTextText);
+        String name =  txtname.getText().toString();
 
-        final EditText text=findViewById(R.id.Input1);
-        String output = text.getText().toString();
-        final TextView field=findViewById(R.id.textView);
-        field.setText(output);
+        final TextView text=findViewById(R.id.textView2);
+        text.setText(name);
     }
 
-    private View.OnClickListener press = new View.OnClickListener(){
-        public void onClick(View view){
-            final EditText text=findViewById(R.id.Input2);
-            String output = text.getText().toString();
-
-            Toast.makeText(getApplicationContext(), output, Toast.LENGTH_SHORT).show();
-
-        }
-    };
 }

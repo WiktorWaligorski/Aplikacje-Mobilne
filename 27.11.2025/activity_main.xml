@@ -9,38 +9,36 @@
     tools:context=".MainActivity" >
 
     <EditText
-        android:id="@+id/Input1"
+        android:id="@+id/editTextText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="text"
-        android:text="Pole1" />
+        android:inputType="text"/>
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button"
-        android:onClick="displayText"/>
+        android:text="Przycisk"
+        android:onClick="funkcja1"/>
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Tekst" />
+        android:text="Pole do wpisania 2" />
 
     <EditText
-        android:id="@+id/Input2"
+        android:id="@+id/editTextText2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="text"
-        android:text="Pole2" />
+        android:inputType="text" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/button3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Przycisk 2" />
+        android:text="Przycisk2" />
 
 </LinearLayout>
