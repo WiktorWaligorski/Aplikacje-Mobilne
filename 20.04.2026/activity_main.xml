@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/imageView"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_weight="1"
+                android:tag="@drawable/couleur_flower_10182344_1920"
+                app:srcCompat="@drawable/couleur_flower_10182344_1920"
+                android:onClick="showImage"/>
+
+            <ImageButton
+                android:id="@+id/imageView13"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_weight="1"
+                android:onClick="showImage"
+                android:tag="@drawable/couleur_flower_10182344_1920"
+                app:srcCompat="@drawable/couleur_flower_10182344_1920" />
+
+            <ImageButton
+                android:id="@+id/imageView9"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_weight="1"
+                android:onClick="showImage"
+                android:tag="@drawable/elg21_lake_10182085"
+                app:srcCompat="@drawable/elg21_lake_10182085" />
+
+            <ImageButton
+                android:id="@+id/imageView5"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_weight="1"
+                android:onClick="showImage"
+                android:tag="@drawable/couleur_green_leaves_10182341_1920"
+                app:srcCompat="@drawable/couleur_green_leaves_10182341_1920" />
+
+            <ImageButton
+                android:id="@+id/imageView2"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_weight="1"
+                android:onClick="showImage"
+                android:tag="@drawable/couleur_green_leaves_10182341_1920"
+                app:srcCompat="@drawable/couleur_green_leaves_10182341_1920" />
+
+            <ImageButton
+                android:id="@+id/imageView12"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_weight="1"
+                android:onClick="showImage"
+                android:tag="@drawable/hans_destinations_235941_1920"
+                app:srcCompat="@drawable/hans_destinations_235941_1920" />
+
+            <ImageButton
+                android:id="@+id/imageView10"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_weight="1"
+                android:onClick="showImage"
+                android:tag="@drawable/couleur_flower_10182344_1920"
+                app:srcCompat="@drawable/couleur_flower_10182344_1920" />
+
+            <ImageButton
+                android:id="@+id/imageView11"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_weight="1"
+                android:onClick="showImage"
+                android:tag="@drawable/elg21_lake_10182085"
+                app:srcCompat="@drawable/elg21_lake_10182085" />
+
+            <ImageButton
+                android:id="@+id/imageView4"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_weight="1"
+                android:onClick="showImage"
+                app:srcCompat="@drawable/hans_destinations_235941_1920" />
+
+            <ImageButton
+                android:id="@+id/imageView6"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_weight="1"
+                android:onClick="showImage"
+                android:tag="@drawable/hans_destinations_235941_1920"
+                app:srcCompat="@drawable/hans_destinations_235941_1920" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_weight="1"
+                android:onClick="showImage"
+                android:tag="@drawable/couleur_green_leaves_10182341_1920"
+                app:srcCompat="@drawable/couleur_green_leaves_10182341_1920" />
+
+            <ImageButton
+                android:id="@+id/imageView7"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_weight="1"
+                android:onClick="showImage"
+                android:tag="@drawable/couleur_flower_10182344_1920"
+                app:srcCompat="@drawable/couleur_flower_10182344_1920" />
+
+            <ImageButton
+                android:id="@+id/imageView14"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_weight="1"
+                android:onClick="showImage"
+                android:tag="@drawable/couleur_green_leaves_10182341_1920"
+                app:srcCompat="@drawable/couleur_green_leaves_10182341_1920" />
+
+            <ImageButton
+                android:id="@+id/imageView15"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_weight="1"
+                android:onClick="showImage"
+                android:tag="@drawable/elg21_lake_10182085"
+                app:srcCompat="@drawable/elg21_lake_10182085" />
+
+
+        </LinearLayout>
+
+
+    </HorizontalScrollView>
+
+
+</LinearLayout>
