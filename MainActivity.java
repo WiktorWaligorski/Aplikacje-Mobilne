@@ -1,12 +1,23 @@
-package com.example.a02_02_2026;
+package edu.zsk.myapplication;
 
+import android.app.AlertDialog;
+import android.app.Dialog;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageButton;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.fragment.app.DialogFragment;
+
+import edu.zsk.myapplication.ImageDialogFragment;
+import edu.zsk.myapplication.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,10 +31,12 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        if (savedInstanceState == null){
-            getSupportFragmentManager().beginTransaction()
-                    .replace(R.id.fragment_container,new Form())
-                    .commit();
-        }
+
+    }
+
+    public void showImage(View v) {
+        int imageId = (int) v.getTag();
+        ImageDialogFragment dialog = ImageDialogFragment.newInstance(imageId);
+        dialog.show(getSupportFragmentManager(), "image_dialog");
     }
 }
